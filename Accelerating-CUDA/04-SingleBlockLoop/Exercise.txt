@@ -1,0 +1,3 @@
+Exercise: Accelerating a For Loop with a Single Block of Threads
+
+Currently, the loop function inside 01-single-block-loop.cu, runs a for loop that will serially print the numbers 0 through 9. Refactor the loop function to be a CUDA kernel which will launch to execute N iterations in parallel. After successfully refactoring, the numbers 0 through 9 should still be printed. Refer to the solution if you get stuck.

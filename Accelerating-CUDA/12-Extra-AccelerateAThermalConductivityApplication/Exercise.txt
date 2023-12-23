@@ -1,0 +1,5 @@
+Exercise: Accelerate A Thermal Conductivity Application
+
+In the following exercise, you will be accelerating an application that simulates the thermal conduction of silver in 2 dimensional space.
+
+Convert the step_kernel_mod function inside 01-heat-conduction.cu to execute on the GPU, and modify the main function to properly allocate data for use on CPU and GPU. The step_kernel_ref function executes on the CPU and is used for error checking. Because this code involves floating point calculations, different processors, or even simply reordering operations on the same processor, can result in slightly different results. For this reason the error checking code uses an error threshold, instead of looking for an exact match. Refer to the solution if you get stuck.

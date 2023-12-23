@@ -1,0 +1,3 @@
+Exercise: Use a Grid-Stride Loop to Manipulate an Array Larger than the Grid
+
+Refactor 03-grid-stride-double.cu to use a grid-stride loop in the doubleElements kernel, in order that the grid, which is smaller than N, can reuse threads to cover every element in the array. The program will print whether or not every element in the array has been doubled, currently the program accurately prints FALSE. Refer to the solution if you get stuck.

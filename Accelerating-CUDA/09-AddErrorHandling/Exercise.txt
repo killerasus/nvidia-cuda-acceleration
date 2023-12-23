@@ -1,0 +1,3 @@
+Exercise: Add Error Handling
+
+Currently 01-add-error-handling.cu compiles, runs, and prints that the elements of the array were not successfully doubled. The program does not, however, indicate that there are any errors within it. Refactor the application to handle CUDA errors so that you can learn what is wrong with the program and effectively debug it. You will need to investigate both synchronous errors potentially created when calling CUDA functions, as well as asynchronous errors potentially created while a CUDA kernel is executing. Refer to the solution if you get stuck.

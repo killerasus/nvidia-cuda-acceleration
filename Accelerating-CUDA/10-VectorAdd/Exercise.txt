@@ -1,0 +1,11 @@
+Final Exercise: Accelerate Vector Addition Application
+
+The following challenge will give you an opportunity to use everything that you have learned thus far in the lab. It involves accelerating a CPU-only vector addition program, which, while not the most sophisticated program, will give you an opportunity to focus on what you have learned about GPU-accelerating an application with CUDA. After completing this exercise, if you have time and interest, continue on to the Advanced Content section for some challenges that involve more complex code bases.
+
+01-vector-add.cu contains a functioning CPU-only vector addition application. Accelerate its addVectorsInto function to run as a CUDA kernel on the GPU and to do its work in parallel. Consider the following that need to occur, and refer to the solution if you get stuck.
+
+    Augment the addVectorsInto definition so that it is a CUDA kernel.
+    Choose and utilize a working execution configuration so that addVectorsInto launches as a CUDA kernel.
+    Update memory allocations, and memory freeing to reflect that the 3 vectors a, b, and result need to be accessed by host and device code.
+    Refactor the body of addVectorsInto: it will be launched inside of a single thread, and only needs to do one thread's worth of work on the input vectors. Be certain the thread will never try to access elements outside the range of the input vectors, and take care to note whether or not the thread needs to do work on more than one element of the input vectors.
+    Add error handling in locations where CUDA code might otherwise silently fail.

@@ -1,0 +1,7 @@
+Exercise: Launch Parallel Kernels
+
+01-first-parallel.cu currently makes a very basic function call that prints the message This should be running in parallel. Follow the steps below to refactor it first to run on the GPU, and then, in parallel, both in a single, and then, in multiple thread blocks. Refer to the solution if you get stuck.
+
+    Refactor the firstParallel function to launch as a CUDA kernel on the GPU. You should still be able to see the output of the function after compiling and running 01-first-parallel.cu with the nvcc command just below.
+    Refactor the firstParallel kernel to execute in parallel on 5 threads, all executing in a single thread block. You should see the output message printed 5 times after compiling and running the code.
+    Refactor the firstParallel kernel again, this time to execute in parallel inside 5 thread blocks, each containing 5 threads. You should see the output message printed 25 times now after compiling and running.
