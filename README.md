@@ -1,2 +1,3 @@
-# nvidia-cuda-acceleration
-Exercises for the Nvidia CUDA Acceleration course
+# Nvidia CUDA Fundamentals
+
+Exercises for the Nvidia CUDA Fundamentals course
